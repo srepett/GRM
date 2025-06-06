@@ -1,0 +1,21 @@
+pkg update && pkg upgrade -y
+pkg install git
+pkg install nodejs
+
+pkg install ffmpeg
+pkg install imagemagick 
+pkg install libwebp 
+
+pkg install wget
+pkg install curl
+pkg install nano 
+
+termux-wake-lock
+# Untuk mematikan:
+termux-wake-unlock
+
+Instal: pkg install tmux -y (atau screen)
+Mulai sesi baru: tmux new -s namasesi
+Jalankan botmu di dalam sesi tmux ini: npm start atau node start.js
+Detach dari sesi: Tekan Ctrl+B, lalu D
+Attach kembali ke sesi: tmux attach -t namasesi
